@@ -3,10 +3,13 @@ C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\se
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\Paciente.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\Perfil.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\Usuario.java
+C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\config\SecurityConfig.java
+C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\repository\UsuarioRepository.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\datatables\DatatablesColunas.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\web\controller\HomeController.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\Medico.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\Especialidade.java
+C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\service\UsuarioService.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\PerfilTipo.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\AbstractEntity.java
 C:\Users\will-\Desktop\projetos\demo-security\src\main\java\com\mballem\curso\security\domain\Agendamento.java
