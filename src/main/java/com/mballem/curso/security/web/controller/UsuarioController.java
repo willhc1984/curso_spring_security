@@ -14,5 +14,7 @@ public class UsuarioController {
 	public String abrirPorAdminParaAdminMedicoUsuario(Usuario usuario) {
 		return "usuario/cadastro";
 	}
+	
+	
 
 }
