@@ -2,8 +2,8 @@ $(document).ready(function () {
 	moment.locale('pt-BR');
     var table = $('#table-especializacao').DataTable({
     	searching: true,
-    	order: [[ 1, "asc" ]],
-    	lengthMenu: [5, 10],
+    	order: [[ 0, "asc" ]],
+    	lengthMenu: [5, 10, 15],
         processing: true,
         serverSide: true,
         responsive: true,
