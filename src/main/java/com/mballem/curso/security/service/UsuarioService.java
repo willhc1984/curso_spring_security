@@ -12,6 +12,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -54,13 +55,19 @@ public class UsuarioService implements UserDetailsService{
 	
 	@Transactional(readOnly = true)
 	public Map<String, Object> buscarTodos(HttpServletRequest request) {
-		System.out.println(request);
 		datatables.setRequest(request);
 		datatables.setColunas(DatatablesColunas.USUARIOS);
 		Page<Usuario> page = datatables.getSearch().isEmpty()
 				? repository.findAll(datatables.getPageable())
 				: repository.findByEmailOrPerfil(datatables.getSearch(), datatables.getPageable());
 		return datatables.getResponse(page);
+	}
+	
+	@Transactional(readOnly = false)
+	public void salvarUsuario(Usuario usuario) {
+		String crypt = new BCryptPasswordEncoder().encode(usuario.getSenha());
+		usuario.setSenha(crypt);
+		repository.save(usuario);		
 	}
 
 }
